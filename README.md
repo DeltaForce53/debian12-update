@@ -1,11 +1,19 @@
 # debian12-update
-Script en Python qui met à jour un système Debian 12. (+ ajout du crontab)
+Script en Python qui met à jour un système Debian 12 et journalise les modifications. (+ ajout du crontab)
 
 ## Prérequis
 
 - Python3 installé
 - Le script doit être executable par **root**
 
+## Arguments lors de l'exécution
+
+```bash
+python 3 debian12-update.py  # Mise à jour normale
+python 3 debian12-update.py --clean  # Mise à jour + nettoyage
+python 3 debian12-update.py --no-upgrade  # Uniquement mise à jour des sources
+python 3 debian12-update.py  # Rétention personnalisée (180 jours)
+```
 ## Mise en place de l'automatisation du script
 
 Aller dans **crontab** :
