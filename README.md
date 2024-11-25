@@ -4,6 +4,11 @@ Script en Python qui met à jour un système Debian 12 et journalise les modific
 ## Prérequis
 
 - Python3 installé
+
+```bash
+apt install python3 -y
+```
+
 - Le script doit être executable par **root**
 
 ## Arguments lors de l'exécution
